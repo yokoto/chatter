@@ -8,4 +8,5 @@ https://www.youtube.com/watch?v=F5hA79vKE_E
 $ rails new --skip-spring --webpack=stimulus chatter
 $ bundle add redis cable_ready stimulus_reflex
 $ yarn add cable_ready stimulus_reflex
+$ bundle exec rails stimulus_reflex:install
 ```
