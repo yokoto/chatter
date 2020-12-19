@@ -1,24 +1,13 @@
-# README
+# Build a Twitter clone in 10 minutes with Rails, CableReady, and StimulusReflex
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://www.youtube.com/watch?v=F5hA79vKE_E
 
-Things you may want to cover:
+# 0. Setup
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+($ brew install redis yarn)
+$ rails new --skip-spring --webpack=stimulus chatter
+$ bundle add redis cable_ready stimulus_reflex
+$ yarn add cable_ready stimulus_reflex
+$ bundle exec rails stimulus_reflex:install
+```
